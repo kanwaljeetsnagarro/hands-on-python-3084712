@@ -5,8 +5,10 @@ name = "John"
 
 intrupution = f"Hello {name}"
 
-greet_format = "Hello {}"
+greet_format = "Hello {} and {}"
 
-formatted = greet_format.format(name)
+formatted = greet_format.format("TestUser", "AnotherUser")  + " " + intrupution
 
-print(intrupution, formatted)
+print(intrupution.lower(), formatted.upper())
+print(formatted.replace("Hello", "Hi"))
+print(formatted)
